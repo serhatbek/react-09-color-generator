@@ -6,7 +6,7 @@ import SingleColor from './SingleColor';
 function App() {
   const [color, setColor] = useState('');
   const [error, setError] = useState(false);
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(new Values('#5c90b5').all(10));
 
   const handleSubmit = (e) => {
     e.preventDefault();
